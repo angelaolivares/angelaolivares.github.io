@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding: 0;
+}
+a {
+	outline: none;
+	text-decoration: none;
+	color: #FF29A4;
+}
+
+a:link {
+	color: #FF29A4;
+}
+a:focus{
+	color:#F47FEC;
+}
+a:hover{
+	color:#A70062;
+}
+ .menu-flex {
+	
+	background: #FFEFF2;
+    padding: 0px;
+	border: 0px;
+	margin: 0px;
+	display: flex;
+	font-weight: bold;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.principal, .quien-soy, .mi-trabajo, .servicios {
+	font-family:montserrat;
+	color: #FF29A4;
+	align-content: center;
+	background-image:url("../imgs/imgspag-02.png");
+	background-size:80px;
+	margin: 15px;
+}
+
+.footer-flex {
+		background: #FFEFF2;
+    padding: 0.2%;
+	border: 0;
+	margin: 0;
+	display: flex;
+	font-family: montserrat;
+	font-weight: bold;
+	color:#FF29A4;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	align-content: center;
+
+}
+
+.facebook, .instagram, .twitter, .pinterest {
+	font-family:montserrat;
+	color: #FF29A4;
+	align-content: center;
+	margin: 15px;
+}
+.landing {
+	display: flex;
+	background-color:#E5A4CA;	
+	padding:0px;
+	text-align: center;
+	flex-wrap: nowrap;
+	
+}
+.texto-centrado {
+	padding: 120px;
+	padding-top: 120px;
+	font-family: montserrat;
+	color:#FFEFF2;
+	font-weight:450;	
+	box-sizing: border-box;
+}
+.division1 {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	font-family: montserrat;
+	font-weight:700;
+	background-color: #E5A4CA;
+	color:#FFEFF2;
+	box-sizing: border-box;
+}.linkinsta {
+}
+.imagen-linea {
+	width: 100%;
+	height: auto;
+}
+.todo {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+@media scren and (max-width:800px) {
+	.main {
+		width: 100%
+	}
+	.imagen-linea {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 400px){
+	.imagen-linea {
+		display: none;
+	}
+}
+
+@media screen and (max-width:800px){
+	.menu-flex {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+}
+@media screen and (max-width:400px){
+	.menu-flex {
+		flex-direction: column;
+		flex-wrap: wrap;
+		
+	}
+}
+@media screen and (max-width:800px){
+	.footer-flex {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+}
+@media screen and (max-width:400px){
+	.footer-flex {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
